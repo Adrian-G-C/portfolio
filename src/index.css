@@ -125,3 +125,11 @@ body {
 .footer-text {
   color: #cbd5e0;
 }
+
+.custom-container {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
