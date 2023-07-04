@@ -1,65 +1,68 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
 }
 
-.portfolio {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+.container {
+  max-width: 960px;
 }
 
-header {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
-h1 {
-  margin: 0;
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
-nav ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
+.font-bold {
+  font-weight: 700;
 }
 
-nav ul li {
-  margin-right: 20px;
-  cursor: pointer;
+.mb-4 {
+  margin-bottom: 1rem;
 }
 
-nav ul li.active {
-  font-weight: bold;
+.bg-gray-100 {
+  background-color: #f7fafc;
 }
 
-section {
-  padding: 40px;
+.bg-white {
+  background-color: #ffffff;
 }
 
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
-footer ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
+.text-white {
+  color: #ffffff;
 }
 
-footer ul li {
-  margin-right: 20px;
+.text-gray-800 {
+  color: #2d3748;
 }
 
-a {
-  color: #fff;
-  text-decoration: none;
+.text-center {
+  text-align: center;
 }
 
-a:hover {
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.space-x-4 > * + * {
+  margin-left: 1rem;
+}
+
+.hover\:underline:hover {
   text-decoration: underline;
 }
