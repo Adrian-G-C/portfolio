@@ -4,13 +4,13 @@ import profileImage from '../assets/sticker.png';
 const AboutMe = () => {
   return (
     <div className="card-container">
-      <div className="card-content flex flex-col items-center">
+      <div className="card-content flex flex-col center">
         <div className="flex items-center justify-center">
           <img
             src={profileImage}
             alt="Profile"
             className="w-24 h-auto max-w-30% rounded-30% mb-4"
-            style={{ maxWidth: '100%' }}
+            style={{ maxWidth: '30%' }}
           />
         </div>
         <h2 className="text-xl font-bold mb-2">About Me</h2>

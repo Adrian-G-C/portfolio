@@ -19,11 +19,11 @@ const App = () => {
       <Section id="portfolio">
         <Portfolio />
       </Section>
-      <Section id="contact">
-        <Contact />
-      </Section>
       <Section id="resume">
         <Resume />
+      </Section>
+      <Section id="contact">
+        <Contact />
       </Section>
       <Footer />
     </div>

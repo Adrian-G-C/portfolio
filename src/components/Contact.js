@@ -1,48 +1,73 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: '',
+  });
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Handle form submission here
+    console.log(formData);
+    // Reset form after submission
+    setFormData({
+      name: '',
+      email: '',
+      message: '',
+    });
+  };
+
   return (
     <div className="card-container">
       <div className="card-content">
         <h2 className="text-xl font-bold mb-2">Contact</h2>
-        <form>
-          <div className="mb-4">
-            <label className="block text-gray-700 font-bold mb-2" htmlFor="name">
-              Name
-            </label>
+        <form onSubmit={handleSubmit}>
+          <div className="form-group">
             <input
               type="text"
               id="name"
-              className="w-full rounded px-3 py-2 border-gray-400"
-              placeholder="Enter your name"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              className="form-input"
+              placeholder="Name"
+              required
             />
           </div>
-          <div className="mb-4">
-            <label className="block text-gray-700 font-bold mb-2" htmlFor="email">
-              Email Address
-            </label>
+          <div className="form-group">
             <input
               type="email"
               id="email"
-              className="w-full rounded px-3 py-2 border-gray-400"
-              placeholder="Enter your email address"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              className="form-input"
+              placeholder="Email Address"
+              required
             />
           </div>
-          <div className="mb-4">
-            <label className="block text-gray-700 font-bold mb-2" htmlFor="message">
-              Message
-            </label>
+          <div className="form-group">
             <textarea
               id="message"
-              className="w-full rounded px-3 py-2 border-gray-400"
-              placeholder="Enter your message"
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
+              className="form-input"
+              placeholder="Message"
               rows="4"
+              required
             ></textarea>
           </div>
-          <div>
+          <div className="form-group">
             <button
               type="submit"
-              className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded"
+              className="btn-primary"
             >
               Send
             </button>
