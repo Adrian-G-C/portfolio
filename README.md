@@ -21,4 +21,4 @@ Deployed Link - https://react-portfolio-nwhw20-c4ae38934269.herokuapp.com/
 
 ## Screenshot 
 
-![Screenshot](./assets/screenshot.png)
+![Screenshot](./src/assets/screenshot.png)
