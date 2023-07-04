@@ -17,7 +17,7 @@ Bootcamp excersises and help from friends and TAs.
 
 GitHub Repo - https://github.com/Adrian-G-C/portfolio
 
-Deployed Link - https://react-portfolio-nwhw20-c4ae38934269.herokuapp.com/
+Deployed Link - https://react-portfolio-nwhw20-f7ceded7e419.herokuapp.com/
 
 ## Screenshot 
 
